@@ -499,6 +499,268 @@
             color: #ccc;
         }
         
+        /* Demo Scanner Section */
+        .demo-scanner {
+            background-color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .scanner-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .scanner-box {
+            background-color: var(--light);
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: var(--shadow);
+        }
+        
+        .scanner-preview {
+            width: 100%;
+            height: 300px;
+            background-color: #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .scanner-preview img {
+            max-width: 100%;
+            max-height: 100%;
+            display: none;
+        }
+        
+        .scanner-controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .scanner-results {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            display: none;
+            text-align: left;
+            box-shadow: var(--shadow);
+        }
+        
+        .nutrition-facts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .nutrition-item {
+            background-color: var(--light);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .nutrition-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        /* How It Works Section */
+        .how-it-works {
+            background-color: var(--gray);
+            padding: 80px 0;
+        }
+        
+        .steps-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+        
+        .step::after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            right: -20px;
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary);
+        }
+        
+        .step:last-child::after {
+            display: none;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+        
+        .testimonials-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 30px;
+            padding: 20px 0;
+            scroll-behavior: smooth;
+        }
+        
+        .testimonial {
+            min-width: 300px;
+            background-color: var(--light);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            background-color: var(--gray);
+            padding: 80px 0;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background-color: var(--white);
+            margin-bottom: 15px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 20px 20px;
+            max-height: 500px;
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        /* Blog Section */
+        .blog-section {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .blog-card {
+            background-color: var(--light);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .blog-image {
+            height: 200px;
+            background-color: #ddd;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .blog-content {
+            padding: 20px;
+        }
+        
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
         /* Responsive Design */
         @media (max-width: 768px) {
             .menu-toggle {
@@ -541,6 +803,10 @@
             .pricing-card {
                 min-width: 100%;
             }
+            
+            .step::after {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -559,6 +825,7 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#features">Features</a></li>
+                    <li><a href="#demo">Demo</a></li>
                     <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#download">Download</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -574,7 +841,7 @@
             <p>Food Calorie Scanner uses advanced AI to estimate body fat from photos and recognize food calories and macros. Start your fitness journey today!</p>
             <div class="hero-buttons">
                 <a href="#download" class="btn">Download Now</a>
-                <a href="#features" class="btn btn-secondary">Learn More</a>
+                <a href="#demo" class="btn btn-secondary">Try Demo</a>
             </div>
         </div>
     </section>
@@ -616,6 +883,80 @@
         </div>
     </section>
 
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Download the App</h3>
+                    <p>Get the Food Calorie Scanner app from the App Store or Google Play.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Set Up Your Profile</h3>
+                    <p>Enter your fitness goals, dietary preferences, and basic information.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Start Scanning</h3>
+                    <p>Use your camera to scan food or take body photos for analysis.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Track Progress</h3>
+                    <p>Monitor your nutrition and body changes with our detailed analytics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Scanner Section -->
+    <section id="demo" class="demo-scanner">
+        <div class="container">
+            <h2>Try Our Food Scanner</h2>
+            <p>Experience how our AI technology analyzes food images to provide nutritional information.</p>
+            
+            <div class="scanner-container">
+                <div class="scanner-box">
+                    <div class="scanner-preview">
+                        <img id="scanner-image" src="" alt="Food Image">
+                        <p id="scanner-placeholder">Food image will appear here</p>
+                    </div>
+                    <div class="scanner-controls">
+                        <input type="file" id="image-upload" accept="image/*" style="display: none;">
+                        <button class="btn" id="upload-btn"><i class="fas fa-upload"></i> Upload Food Image</button>
+                        <button class="btn btn-secondary" id="demo-btn"><i class="fas fa-magic"></i> Use Demo Image</button>
+                    </div>
+                </div>
+                
+                <div class="scanner-results" id="scanner-results">
+                    <h3>Nutritional Analysis</h3>
+                    <p id="food-name">Food: Apple</p>
+                    <div class="nutrition-facts">
+                        <div class="nutrition-item">
+                            <div class="nutrition-value" id="calories">95</div>
+                            <div>Calories</div>
+                        </div>
+                        <div class="nutrition-item">
+                            <div class="nutrition-value" id="protein">0.5g</div>
+                            <div>Protein</div>
+                        </div>
+                        <div class="nutrition-item">
+                            <div class="nutrition-value" id="carbs">25g</div>
+                            <div>Carbs</div>
+                        </div>
+                        <div class="nutrition-item">
+                            <div class="nutrition-value" id="fat">0.3g</div>
+                            <div>Fat</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Pricing Section -->
     <section id="pricing" class="pricing-section">
         <div class="container">
@@ -644,6 +985,96 @@
                         <li>Ad-free experience</li>
                     </ul>
                     <a href="#download" class="btn">Go Premium</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "This app has completely changed how I track my nutrition. The food scanner is incredibly accurate and has helped me lose 15 pounds in 3 months!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SJ</div>
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Fitness Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "As a personal trainer, I recommend this app to all my clients. The body fat estimation feature is a game-changer for tracking progress without expensive equipment."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div>
+                            <h4>Mike Roberts</h4>
+                            <p>Personal Trainer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "I've tried many calorie tracking apps, but this one stands out. The AI recognition is so fast and accurate, making it easy to stay on track with my diet."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EC</div>
+                        <div>
+                            <h4>Emily Chen</h4>
+                            <p>Health Coach</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How accurate is the food calorie scanner?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Our AI technology has been trained on millions of food images and achieves over 90% accuracy for common foods. Accuracy may vary for complex dishes with multiple ingredients.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Is my data secure and private?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we take privacy seriously. All your data is encrypted and stored securely. We never share your personal information with third parties without your consent.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I use the app without a subscription?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! Our free version offers 5 body fat scans and 5 food scans per month, which is perfect for occasional users. Upgrade to Premium for unlimited scans and advanced features.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What devices are supported?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        The app is available for both iOS (iPhone/iPad) and Android devices. It works on devices with iOS 12+ or Android 8+.
+                    </div>
                 </div>
             </div>
         </div>
@@ -723,6 +1154,7 @@
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#features">Features</a></li>
+                        <li><a href="#demo">Demo</a></li>
                         <li><a href="#pricing">Pricing</a></li>
                         <li><a href="#download">Download</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -751,21 +1183,23 @@
         });
         
         // Smooth scrolling for navigation links
-        document.querySelectorAll('nav a').forEach(anchor => {
+        document.querySelectorAll('nav a, .hero-buttons a, .pricing-card a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 
                 const targetId = this.getAttribute('href');
                 const targetSection = document.querySelector(targetId);
                 
-                window.scrollTo({
-                    top: targetSection.offsetTop - 70,
-                    behavior: 'smooth'
-                });
-                
-                // Close mobile menu after clicking a link
-                if (window.innerWidth <= 768) {
-                    document.querySelector('nav ul').classList.remove('show');
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu after clicking a link
+                    if (window.innerWidth <= 768) {
+                        document.querySelector('nav ul').classList.remove('show');
+                    }
                 }
             });
         });
@@ -776,6 +1210,129 @@
             alert('Thank you for your message! We will get back to you soon.');
             this.reset();
         });
+        
+        // Demo Scanner Functionality
+        const uploadBtn = document.getElementById('upload-btn');
+        const demoBtn = document.getElementById('demo-btn');
+        const imageUpload = document.getElementById('image-upload');
+        const scannerImage = document.getElementById('scanner-image');
+        const scannerPlaceholder = document.getElementById('scanner-placeholder');
+        const scannerResults = document.getElementById('scanner-results');
+        
+        // Food database for demo
+        const foodDatabase = {
+            'apple': { calories: 95, protein: '0.5g', carbs: '25g', fat: '0.3g' },
+            'banana': { calories: 105, protein: '1.3g', carbs: '27g', fat: '0.4g' },
+            'pizza': { calories: 285, protein: '12g', carbs: '36g', fat: '10g' },
+            'salad': { calories: 150, protein: '5g', carbs: '10g', fat: '10g' },
+            'burger': { calories: 354, protein: '17g', carbs: '29g', fat: '19g' }
+        };
+        
+        uploadBtn.addEventListener('click', function() {
+            imageUpload.click();
+        });
+        
+        imageUpload.addEventListener('change', function(e) {
+            if (e.target.files && e.target.files[0]) {
+                const reader = new FileReader();
+                
+                reader.onload = function(e) {
+                    scannerImage.src = e.target.result;
+                    scannerImage.style.display = 'block';
+                    scannerPlaceholder.style.display = 'none';
+                    
+                    // Simulate AI processing
+                    setTimeout(function() {
+                        analyzeFood('custom');
+                    }, 1500);
+                }
+                
+                reader.readAsDataURL(e.target.files[0]);
+            }
+        });
+        
+        demoBtn.addEventListener('click', function() {
+            // Use a demo food image
+            const demoFoods = ['apple', 'banana', 'pizza', 'salad', 'burger'];
+            const randomFood = demoFoods[Math.floor(Math.random() * demoFoods.length)];
+            
+            scannerImage.src = `https://source.unsplash.com/400x300/?${randomFood}`;
+            scannerImage.style.display = 'block';
+            scannerPlaceholder.style.display = 'none';
+            
+            // Simulate AI processing
+            setTimeout(function() {
+                analyzeFood(randomFood);
+            }, 1500);
+        });
+        
+        function analyzeFood(foodType) {
+            const foodName = document.getElementById('food-name');
+            const calories = document.getElementById('calories');
+            const protein = document.getElementById('protein');
+            const carbs = document.getElementById('carbs');
+            const fat = document.getElementById('fat');
+            
+            if (foodType === 'custom') {
+                // For custom images, generate random nutrition data
+                const randomCalories = Math.floor(Math.random() * 500) + 50;
+                const randomProtein = (Math.random() * 30).toFixed(1) + 'g';
+                const randomCarbs = (Math.random() * 60).toFixed(0) + 'g';
+                const randomFat = (Math.random() * 30).toFixed(1) + 'g';
+                
+                foodName.textContent = 'Food: Custom Dish';
+                calories.textContent = randomCalories;
+                protein.textContent = randomProtein;
+                carbs.textContent = randomCarbs;
+                fat.textContent = randomFat;
+            } else {
+                // Use predefined data for demo foods
+                const foodData = foodDatabase[foodType];
+                foodName.textContent = `Food: ${foodType.charAt(0).toUpperCase() + foodType.slice(1)}`;
+                calories.textContent = foodData.calories;
+                protein.textContent = foodData.protein;
+                carbs.textContent = foodData.carbs;
+                fat.textContent = foodData.fat;
+            }
+            
+            scannerResults.style.display = 'block';
+        }
+        
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Testimonials auto-scroll
+        let testimonialScroll = document.querySelector('.testimonials-container');
+        let scrollAmount = 0;
+        
+        function autoScrollTestimonials() {
+            if (testimonialScroll) {
+                scrollAmount += 1;
+                if (scrollAmount >= testimonialScroll.scrollWidth / 2) {
+                    scrollAmount = 0;
+                }
+                testimonialScroll.scrollLeft = scrollAmount;
+            }
+        }
+        
+        // Start auto-scroll
+        setInterval(autoScrollTestimonials, 30);
     </script>
 </body>
 </html>
